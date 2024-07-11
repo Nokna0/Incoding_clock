@@ -45,9 +45,15 @@ while not done:
     pygame.draw.line(SCREEN, WHITE, [96, 128], [96, 448-5], 5)
     pygame.draw.line(SCREEN, WHITE, [416, 128], [416, 448-5], 5)
 
+    # 수평선 그리기
     for i in range(15):
-        grid_y = 128 - (i * 0) # 128~448 좌표 사이의 격자 생성
-        pygame.draw.line(SCREEN, WHITE, [64, 128], [448-5, 128], 5)
+        y = 128 + i * 20  # 128에서 시작해서 20 픽셀 간격으로 그리기
+        pygame.draw.line(SCREEN, WHITE, [64, y], [448, y], 1)
+
+    # 수직선 그리기
+    for i in range(15):
+        x = 96 + i * 20  # 96에서 시작해서 20 픽셀 간격으로 그리기
+        pygame.draw.line(SCREEN, WHITE, [x, 128], [x, 448], 1)
 
 
     # 화면에 그린 내용을 업데이트합니다.
