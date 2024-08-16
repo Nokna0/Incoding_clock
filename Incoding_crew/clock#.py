@@ -26,6 +26,7 @@ while True:
         realmenu = 'quit'  # 사용자가 '종료' 또는 'quit'을 입력하면 realmenu에 'quit' 저장
     else:
         print('유효하지 않은 메뉴')  # 잘못된 입력일 경우 에러 메시지 출력
+        print('-----------종료-----------')
         continue  # 루프 처음으로 돌아가 다시 입력받음
 
     # 시계 기능
