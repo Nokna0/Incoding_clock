@@ -95,7 +95,8 @@ while True:
             timer['minute'] = float(timer['minute'])  # 분 변환
             timer['second'] = float(timer['second'])  # 초 변환 
         except ValueError:
-            print('허용되지 않는 값')  # 변환 오류 발생 시 에러 메시지 출력
+            print('유효하지 않은 값')  # 변환 오류 발생 시 에러 메시지 출력
+            print('-----------종료-----------')
             continue  # 루프 처음으로 돌아가 다시 입력받음
         
         print('\'space\'키를 눌러 정지')  # 정지할 때 스페이스 키 안내 메시지
@@ -127,5 +128,6 @@ while True:
         break  # 루프 종료
 
     else:
-        print('유호하지 않은 메뉴')  # 잘못된 입력일 경우 에러 메시지 출력
+        print('유효하지 않은 메뉴')  # 잘못된 입력일 경우 에러 메시지 출력
+        print('-----------종료-----------')
         continue  # 루프 처음으로 돌아가 다시 입력받음
