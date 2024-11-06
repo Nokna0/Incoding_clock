@@ -10,9 +10,9 @@
 ## 2. Keybord 모듈 설치
 
    명령 프롬프트를 열고 다음 명령어를 입력하세요
-   
-       pip install keyboard
-
+   ```
+   pip install keyboard
+   ```
    만약 keyboard 모듈을 설치할 수 없다면 **clock#_emergency.py** 를 사용하세요
 
 ## 3. 프로그램 실행
