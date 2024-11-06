@@ -24,11 +24,11 @@ while True:
 
     # 시계 기능
     if realmenu == 'clock':
-        print('----------시계----------')
+        print('==========시계==========')
         print('정지 불가능')  # 정지 불가능 안내 메시지
         while True:
             if False:
-                print('\n-----------종료-----------')  # 정지할 때 종료 안내 메시지
+                print('\n==========종료==========')  # 정지할 때 종료 안내 메시지
                 break  # 스페이스 키가 눌리면 루프를 빠져나감
             else:
                 clock = list(time.localtime())  # 현재 시간을 리스트 형식으로 가져옴
@@ -39,7 +39,7 @@ while True:
 
     # 스톱워치 기능
     elif realmenu == 'stopwatch':
-        print('----------스톱워치----------')
+        print('==========스톱워치==========')
         print('정지 불가능')  # 정지 불가능 안내 메시지
 
         stopwatch_h = 0  # 시간 초기화
@@ -48,7 +48,7 @@ while True:
 
         while True:
             if False:
-                print('\n-----------종료-----------')  # 정지할 때 종료 안내 메시지
+                print('\n==========종료==========')  # 정지할 때 종료 안내 메시지
                 break  # 스페이스 키가 눌리면 루프를 빠져나감
             else:
                 time.sleep(0.01)  # 0.01초 대기
@@ -76,7 +76,7 @@ while True:
 
     # 타이머 기능
     elif realmenu == 'timer':
-        print('----------타이머----------')
+        print('==========타이머==========')
         print('카운트다운할 시간 입력')
         timer = {'hour': 0, 'minute': 0, 'second': 0}  # 타이머 딕셔너리 생성
 
@@ -114,7 +114,7 @@ while True:
             timer_result = f"{round(timer['hour'])}시 {round(timer['minute'])}분 {round(timer['second'], 2)}초"
             print(f'\r{timer_result}', end='')
 
-        print('\n-----------종료-----------')  # 타이머 종료 메시지 출력
+        print('\n==========종료==========')  # 타이머 종료 메시지 출력
 
     # 종료 명령
     elif realmenu == 'quit':
